@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirm</title>
+</head>
+
+<body>
+    <h1>THIS PAGE IS CONFIRM DIALOG BOX EXAMPLE</h1>
+    <p align="center">
+        <a href="dialog box.html" onclick="return activatelink();">Run the subscription</a>
+    </p>
+    <script>
+        function activatelink()
+         {
+            let response = confirm("Okay, confirm your data ?");
+            if (response === true)
+             {
+                alert("open tha dialog  box")
+                return true;
+
+
+            }
+            else 
+            {
+                alert("not open tha dialog box")
+                return false;
+
+
+            }
+        }
+    </script>
+</body>
+
+
+
+</html>

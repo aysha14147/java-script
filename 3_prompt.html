@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operations</title>
+</head>
+<body>
+    <h1>Arithmetic Operations</h1>
+    <script>
+        // Prompt user for input
+        let a = prompt("Enter number a:");
+        let b = prompt("Enter number b:");
+
+        // Convert inputs to integers
+        a = parseInt(a);
+        b = parseInt(b);
+
+        // Check if inputs are valid numbers
+        if (isNaN(a) || isNaN(b)) {
+            alert("Please enter valid numbers.");
+        } else {
+            // Perform arithmetic operations
+            const add = a + b;
+            const sub = a - b;
+            const mul = a * b;
+            const di = b !== 0 ? a / b : "Cannot divide by zero";
+
+            // Create a container for the results
+            const resultContainer = document.createElement('div');
+            resultContainer.style.marginTop = '20px';
+
+            // Display results
+            resultContainer.innerHTML = `
+                <p>Addition: ${add}</p>
+                <p>Subtraction: ${sub}</p>
+                <p>Multiplication: ${mul}</p>
+                <p>Division: ${di}</p>
+            `;
+
+            // Append the results to the body
+            document.body.appendChild(resultContainer);
+        }
+    </script>
+</body>
+</html>
